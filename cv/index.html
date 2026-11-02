@@ -62,6 +62,10 @@ h2 { font-family: var(--kserif); font-size: 19px; font-weight: 700; margin: 0; p
 .streams .q { font-family: var(--kserif); font-weight: 700; }
 .streams p { margin: 4px 0 0; font-size: 14px; }
 .streams .ev { margin-top: 6px; font-size: 12.5px; color: var(--muted); }
+.subq { margin: 8px 0 0 18px; color: var(--muted); font-size: 14px; }
+.story { display: grid; gap: 10px; font-size: 14.5px; }
+.story p { margin: 0; }
+.note { margin: 0; color: var(--muted); font-size: 13.5px; }
 .rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .rows li { display: grid; grid-template-columns: 112px 1fr; gap: 12px; }
 .rows .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 2px; }
@@ -90,7 +94,10 @@ footer a { color: inherit; }
 </div></div>
 
 <div class="pad"><div class="wrap">
-  <p class="question">사람은 왜 일에 몰입하고, 어느 순간 비몰입하는가.</p>
+  <div>
+    <p class="question">사람은 왜 일에 몰입하고, 어느 순간 비몰입하는가.</p>
+    <p class="subq">AI가 일하는 방식을 바꾸는 지금, 저는 이 질문을 일의 의미와 소명에서 다시 묻고 있습니다.</p>
+  </div>
 
   <div class="intro">
     <p>사람과 일의 관계를 공부하는 산업 및 조직심리학자입니다. 2013년부터 교육과 인사 현장에서 일하며 이 질문을 오래 붙들어 왔습니다. 같은 일터에서도 어떤 사람은 일에 마음을 두고 어떤 사람은 조용히 물러납니다. 그 차이가 어디에서 생기는지, 어떤 관계와 자원이 그 흐름을 바꾸는지를 연구하고 있습니다.</p>
@@ -102,18 +109,36 @@ footer a { color: inherit; }
   </div>
 
   <section>
-    <h2>붙들고 있는 질문</h2>
+    <h2>이 질문을 붙들게 된 까닭</h2>
+    <div class="story">
+      <p>전자공학을 전공하고 부품 구매 직무로 자동차 회사에 들어갔는데 처음 맡은 일은 협력사와 구매본부 직원을 교육하는 일이었습니다. 예상하지 못한 자리였지만 그 일이 참 좋았습니다. 교육받은 사람들이 일을 더 잘하면 부품의 품질이 나아지고 차를 타는 사람의 안전에도 보탬이 된다고 믿었기 때문입니다.</p>
+      <p>이후 인사 제도와 조직문화 진단, 피플 애널리틱스를 맡으며 구성원들의 경험과 마음을 살폈습니다. 반복되는 행정 업무에 지쳐 '내가 왜 이 일을 하지' 되묻던 때도 있었기에 조직문화 인터뷰와 주관식 응답에서 '내 일이 무슨 의미가 있는지 모르겠다'는 말을 만날 때마다 남의 이야기로 들리지 않았습니다.</p>
+      <p>사람은 언제 일에서 보람을 느끼고 왜 한때 좋아했던 일에서 멀어지는지, 조직은 그 마음에 어떤 영향을 주는지 알고 싶어 공부를 시작했습니다. 석사과정의 직무 소명 연구가 박사과정의 조용한 사직과 소명 연구로 이어진 것도 그 질문 덕분입니다. 제게 소명의 실마리는 거창한 사명보다 '이 일이 좋고 누군가에게 도움이 된다'는 소박한 마음이었습니다.</p>
+      <p>요즘은 AI가 일하는 방식을 바꾸면서 이 질문을 다시 붙들고 있습니다. 힘들게 익힌 코딩 능력이 생성형 AI 앞에서 강점이 되지 못할까 불안하다는 대학원생의 물음에 저도 잠시 멈칫했습니다. 스킬의 유효기간은 짧아져도 그 능력을 왜 익혔는지, 누구에게 무엇을 전하고 싶었는지는 그대로 남는다고 생각합니다. 소명이 그런 시대의 닻이 될 수 있다고 믿습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>질문 지도</h2>
+    <p class="note">두 권의 책과 논문에서 던진 질문을 다섯 갈래로 묶었습니다.</p>
     <ul class="streams">
-      <li><span class="no">01</span><div><div class="q">사람은 왜 조용히 물러나는가</div>
-        <p>회사가 약속을 어겼다고 느낄 때 사람은 지치고 말을 아끼다가 조용히 물러나기도 합니다. 박사학위논문에서 이 경로를 추적했고 소명이 그 흐름을 늦추는지 살폈습니다.</p>
-        <div class="ev">조용한 사직 척도 타당화(2023) · 조용한 사직과 이직의도(2024) · 조용한 사직과 소명상실(2025)</div></div></li>
-      <li><span class="no">02</span><div><div class="q">무엇이 사람을 일에 머물게 하는가</div>
-        <p>리더의 유머와 진정성, 동료와의 비교, 잡 크래프팅, 일터의 경험을 봅니다. 사람의 태도를 고정된 성격보다 시간에 따라 움직이는 상태로 보려 합니다.</p>
-        <div class="ev">잡 크래프팅 유형과 변화(JVB, 2026) · 직원경험(Personnel Review, 2025) · 유머와 조직시민행동(2025)</div></div></li>
-      <li><span class="no">03</span><div><div class="q">마음은 사람 사이로 어떻게 번지는가</div>
-        <p>조용한 사직이 동료 사이에 퍼지는 과정을 시뮬레이션으로 살피고 LLM을 가상 응답자로 쓸 때 무엇을 믿을 수 있는지 검증합니다.</p>
-        <div class="ev">인공지능과 인지적 다양성(인사조직연구, 2025)</div></div></li>
+      <li><span class="no">01</span><div><div class="q">일하는 마음이 생기고 꺼지는 자리</div>
+        <p>사람은 언제 일에서 보람을 느끼고 왜 멀어지는가. 소명은 발견하는 것인가, 만들어 가는 것인가. 소명은 왜 힘이 되기도 하고 덫이 되기도 하는가.</p>
+        <div class="ev">조용한 사직 척도 타당화(2023) · 조용한 사직과 이직의도(2024) · 조용한 사직과 소명상실(2025) · 박사학위논문(2025)</div></div></li>
+      <li><span class="no">02</span><div><div class="q">사람 사이에서 달라지는 마음</div>
+        <p>리더와 동료는 그 마음을 어떻게 키우거나 꺾는가. 리더의 유머는 언제 힘이 되는가. 조용한 사직은 동료 사이로 번지는가.</p>
+        <div class="ev">유머와 조직시민행동(2025) · 대인 일탈 완화(2025) · 직장 내 괴롭힘과 우울(2023)</div></div></li>
+      <li><span class="no">03</span><div><div class="q">마음을 지키거나 깎는 조직의 조건</div>
+        <p>좋은 HR 제도는 언제 구성원의 마음까지 닿는가. 시간을 낭비시키는 조직은 무엇을 남기는가. 소명이 숨 쉬는 조직의 조건은 무엇인가.</p>
+        <div class="ev">직원경험의 다차원 구조(Personnel Review, 2025) · HR애널리틱스의 개념적 틀(2022)</div></div></li>
+      <li><span class="no">04</span><div><div class="q">AI가 일을 가져갈 때 남는 것</div>
+        <p>일의 의미와 소명은 왜 더 중요해지는가. 무엇을 AI에 맡기고 무엇을 붙들 것인가. 스킬의 유효기간이 짧아질 때 사람에게 남는 것은 무엇인가.</p>
+        <div class="ev">인공지능과 인지적 다양성(인사조직연구, 2025) · 『HR 대전환, 스킬 시프트』(2026)</div></div></li>
+      <li><span class="no">05</span><div><div class="q">마음을 재고 이해하는 방법</div>
+        <p>AI는 사람의 마음을 얼마나 대신 읽을 수 있는가. 소명을 데이터로 표현할 수 있는가. 평균은 무엇을 가리는가.</p>
+        <div class="ev">잡 크래프팅 유형과 그 변화(JVB, 2026) · 직원경험 프로파일(2025)</div></div></li>
     </ul>
+    <p class="note">앞으로 세 해 동안은 AI 사용이 늘 때 일의 의미가 어떻게 옮겨 가는지 다년 패널로 따라가려 합니다. 소명과 일의 의미를 재는 문항을 LLM으로 만들어 사람의 응답과 맞대 보고 스킬이 쓸모를 잃는 순간에 소명이 닻이 되는지도 실험으로 살피겠습니다.</p>
   </section>
 
   <section>
@@ -164,6 +189,8 @@ footer a { color: inherit; }
     <ul class="rows">
       <li><span class="when">2026.06</span><span class="what"><b>『HR 대전환, 스킬 시프트』</b><span>8인 공저, 대표 저자 · 삼성글로벌리서치</span></span></li>
       <li><span class="when">2025.07</span><span class="what"><b>『HR테크혁명: 생성형 AI편』</b><span>5인 공저 · 삼성글로벌리서치</span></span></li>
+      <li><span class="when">집필 중</span><span class="what"><b>『콜링, 다시 쓰는 일의 의미』(가제)</b><span>손영우·김명진 공저 · 2027 출간 예정</span></span></li>
+      <li><span class="when">집필 중</span><span class="what"><b>『AI 시대, 일터의 착각들』(가제)</b><span>진현 공저</span></span></li>
       <li><span class="when">2025.07</span><span class="what"><b>Best Research Award</b><span>삼성글로벌리서치 대표이사 표창</span></span></li>
       <li><span class="when">2024</span><span class="what"><b>우수 포스터상</b><span>한국산업및조직심리학회</span></span></li>
     </ul>
