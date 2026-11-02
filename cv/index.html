@@ -66,6 +66,15 @@ h2 { font-family: var(--kserif); font-size: 19px; font-weight: 700; margin: 0; p
 .story { display: grid; gap: 10px; font-size: 14.5px; }
 .story p { margin: 0; }
 .note { margin: 0; color: var(--muted); font-size: 13.5px; }
+.lead { margin: 0; font-size: 14.5px; }
+.plan { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.plan > li { background: var(--surface); border: 1px solid var(--line); border-radius: 3px; padding: 12px 14px; display: grid; grid-template-columns: 84px 1fr; gap: 12px; }
+.plan .yr { font-family: var(--serif); font-size: 21px; color: var(--brass2); line-height: 1.25; }
+.plan .yr span { display: block; margin-top: 4px; font-family: var(--body); font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+.plan .sts { display: grid; gap: 12px; min-width: 0; }
+.plan .st b { display: block; font-family: var(--kserif); font-weight: 700; font-size: 15px; line-height: 1.5; }
+.plan .st p { margin: 4px 0 0; font-size: 14px; }
+.plan .st .ev { margin-top: 4px; font-size: 12.5px; color: var(--muted); }
 .rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .rows li { display: grid; grid-template-columns: 112px 1fr; gap: 12px; }
 .rows .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 2px; }
@@ -83,6 +92,7 @@ footer a { color: inherit; }
   h1 { font-size: 29px; }
   .question { font-size: 20px; }
   .rows li { grid-template-columns: 1fr; gap: 0; }
+  .plan > li { grid-template-columns: 1fr; gap: 8px; }
 }
 </style>
 </head>
@@ -138,7 +148,17 @@ footer a { color: inherit; }
         <p>LLM은 척도 문항의 내용타당도를 전문가만큼 평가할 수 있는가. LLM의 가상 응답은 실제 응답의 요인구조를 재현하는가. 잡 크래프팅과 직원경험의 유형은 시간에 따라 어떻게 바뀌는가.</p>
         <div class="ev">잡 크래프팅 유형과 그 변화(JVB, 2026) · 직원경험 프로파일(Personnel Review, 2025)</div></div></li>
     </ul>
-    <p class="note">앞으로 3년 동안은 생성형 AI 사용이 늘면서 일의 의미와 몰입이 어떻게 달라지는지 패널 자료로 추적할 계획입니다. 소명과 일의 의미를 측정하는 문항을 LLM으로 개발해 실제 응답과 비교하는 연구와 AI로 기존 역량의 가치가 줄어드는 상황에서 소명이 어떤 역할을 하는지 보는 실험도 준비하고 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>앞으로의 연구</h2>
+    <p class="lead">앞으로 3년 동안은 &#x27;사람은 왜 일에 몰입하고, 어느 순간 비몰입하는가&#x27;라는 질문을 AI가 도입된 일터에서 이어서 연구하려고 합니다. 특히 소명에 주목합니다. 소명은 어려운 상황에서도 구성원이 일에서 멀어지지 않도록 돕는 자원으로 알려져 있고 제 박사학위논문에서도 같은 결과가 나왔습니다. AI가 업무의 일부를 대신하게 된 지금도 소명이 같은 역할을 하는지, 그 역할이 구성원에 따라 어떻게 달라지는지 확인하려고 합니다.</p>
+    <ol class="plan">
+      <li><div class="yr">2027<span>AI 도입 이후 구성원의 변화를 추적합니다</span></div><div class="sts"><div class="st"><b>AI가 일터로 들어왔을 때 어떤 구성원이 일의 의미를 잃고, 어떤 구성원은 일의 의미를 더해갈까?</b><p>같은 직장인들을 몇 년 동안 반복해서 조사해 AI와 함께 일하게 된 뒤 일의 의미와 몰입이 어떻게 달라지는지 살펴봅니다.</p><div class="ev">이 연구로 AI를 도입할 때 어떤 구성원을 먼저 지원해야 하는지 알 수 있습니다.</div></div></div></li>
+      <li><div class="yr">2028<span>구성원이 일의 의미를 유지하는 조건을 찾습니다</span></div><div class="sts"><div class="st"><b>AI가 사람보다 일을 더 잘하게 되면, 구성원은 그 일에서 계속 의미를 찾을 수 있을까?</b><p>AI와 함께 일하는 상황을 실험으로 재현해 구성원이 느끼는 일의 의미와 주인의식이 어떻게 달라지는지 확인합니다. 앞에서 소개한 대학원생의 고민에서 출발한 연구입니다.</p><div class="ev">이 연구로 AI와 사람이 일을 나눌 때 구성원의 주인의식을 해치지 않는 방식을 제안할 수 있습니다.</div></div><div class="st"><b>AI와 함께 일하는 시대에도 리더의 말과 행동이 구성원의 몰입을 바꿀 수 있을까?</b><p>구성원의 경험을 하루 단위로 조사해 리더의 말과 행동이 그날의 몰입에 어떤 차이를 만드는지 살펴봅니다.</p><div class="ev">이 연구로 AI 시대의 리더가 일상에서 실천할 수 있는 행동을 제안합니다.</div></div></div></li>
+      <li><div class="yr">2029<span>조직 현장에서 해법을 검증합니다</span></div><div class="sts"><div class="st"><b>구성원이 AI와 함께 일하면서도 일의 의미를 잃지 않으려면 조직은 무엇을 바꿔야 할까?</b><p>기업과 협력해 일의 의미를 높이는 방법을 실제 조직에 적용하고 효과를 확인합니다.</p><div class="ev">이 연구로 AI 도입 교육에 바로 쓸 수 있는 프로그램을 만듭니다.</div></div><div class="st"><b>조용한 사직은 동료들 사이에서 어떻게 확산될까?</b><p>한 구성원의 조용한 사직이 팀 전체의 몰입에 어떤 영향을 주는지 분석합니다.</p><div class="ev">이 연구로 이탈이 확산되기 전에 어디를 먼저 살펴야 하는지 알 수 있습니다.</div></div></div></li>
+    </ol>
+    <p class="note">연구 결과는 기업이 AI를 도입할 때 쓸 수 있는 진단 도구와 교육 프로그램으로 만들고 강의에서도 다루려고 합니다.</p>
   </section>
 
   <section>
@@ -189,7 +209,7 @@ footer a { color: inherit; }
     <ul class="rows">
       <li><span class="when">2026.06</span><span class="what"><b>『HR 대전환, 스킬 시프트』</b><span>8인 공저, 대표 저자 · 삼성글로벌리서치</span></span></li>
       <li><span class="when">2025.07</span><span class="what"><b>『HR테크혁명: 생성형 AI편』</b><span>5인 공저 · 삼성글로벌리서치</span></span></li>
-      <li><span class="when">집필 중</span><span class="what"><b>『콜링, 다시 쓰는 일의 의미』(가제)</b><span>손영우·김명진 공저 · 2027 출간 예정</span></span></li>
+      <li><span class="when">집필 중</span><span class="what"><b>『콜링, 다시 쓰는 일의 의미』(가제)</b><span>손영우·김명진 공저</span></span></li>
       <li><span class="when">집필 중</span><span class="what"><b>『AI 시대, 일터의 착각들』(가제)</b><span>진현 공저</span></span></li>
       <li><span class="when">2026.07</span><span class="what"><b>Best Consulting Award</b><span>삼성글로벌리서치 대표이사 표창</span></span></li>
       <li><span class="when">2025.07</span><span class="what"><b>Best Research Award</b><span>삼성글로벌리서치 대표이사 표창</span></span></li>
