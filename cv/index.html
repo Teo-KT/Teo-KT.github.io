@@ -81,10 +81,24 @@ h2 { font-family: var(--kserif); font-size: 19px; font-weight: 700; margin: 0; p
 .rows .what { min-width: 0; }
 .rows .what b { font-weight: 600; }
 .rows .what span { display: block; color: var(--muted); font-size: 13.5px; }
-.field { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; }
-.field b { font-weight: 600; }
-.rows .field { margin-top: 8px; }
-.rows .field li { display: list-item; }
+/* 실무 경력: 아래쪽 띠로 나누고 회사별 카드에 과제와 역할을 적는다 */
+.band h2 { font-family: var(--kserif); font-size: 26px; font-weight: 700; margin: 0; padding: 0; border: 0; line-height: 1.3; }
+.band .lead { color: var(--band-ink); }
+.band .lead span { display: block; margin-top: 8px; color: var(--band-muted); font-size: 13px; }
+.co { background: var(--surface); border: 1px solid var(--line); border-radius: 3px; padding: 16px 16px 18px; display: grid; gap: 14px; }
+.co > header { display: grid; gap: 2px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.co > header .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.co > header b { font-family: var(--kserif); font-size: 17px; font-weight: 700; color: var(--navy); line-height: 1.45; }
+.co > header .t { color: var(--brass2); font-size: 13.5px; font-weight: 600; }
+.grp h3 { margin: 0 0 6px; font-family: var(--kserif); font-size: 15px; font-weight: 700; }
+.grp ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; font-size: 14px; }
+.grp li i { font-style: normal; font-size: 12px; font-weight: 600; color: var(--brass2); margin-left: 6px; white-space: nowrap; }
+.prose { display: grid; gap: 10px; font-size: 14.5px; }
+.prose p { margin: 0; }
+.prose a { color: inherit; text-decoration-color: var(--brass); text-underline-offset: 3px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips span { background: var(--surface2); border-radius: 3px; padding: 2px 9px; font-size: 13.5px; }
+@media (prefers-color-scheme: dark) { .co > header b { color: var(--ink); } }
 .pubs { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14px; }
 .pubs .j { color: var(--muted); }
 .tag { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 3px; background: var(--surface2); color: var(--muted); margin-left: 4px; vertical-align: 1px; }
@@ -192,31 +206,6 @@ footer a { color: inherit; }
   </section>
 
   <section>
-    <h2>실무 경력</h2>
-    <ul class="rows">
-      <li><span class="when">2021.11 – 현재</span><div class="what"><b>삼성글로벌리서치 인재경영연구실</b><span>Research Fellow · People Data Scientist · 옛 삼성경제연구소</span>
-        <ul class="field">
-          <li><b>채용과 선발.</b> 인성검사 문항 개발, 공채 서류심사 AI 알고리즘 설계, 면접 질문 추천 시스템, XR 기반 면접관 교육.</li>
-          <li><b>구성원 정서와 이탈 분석.</b> 익명 게시판과 Pulse Survey 기반 정서 분석, 이직 예측과 이직 위험군 면담 지원.</li>
-          <li><b>AI 시대 인력과 직무 변화.</b> 생성형 AI에 따른 인력구조 예측, AI 시대 인사 전략, 스킬 기반 인사.</li>
-        </ul></div></li>
-      <li><span class="when">2018.04 – 2021.10</span><div class="what"><b>현대자동차그룹 인사실 인사2팀</b><span>책임매니저</span>
-        <ul class="field">
-          <li><b>인사기획과 성과평가·보상.</b> 그룹 성과평가·보상 제도 설계, 그룹 미래 HR 방향 도출, 재택·하이브리드 근무 인사기준 수립, MZ세대 요구를 반영한 복지제도 개선.</li>
-          <li><b>핵심가치와 조직문화.</b> 그룹 핵심가치·경영철학 담당, 그룹 포상제도 기획, 29개 그룹사 조직문화 진단 분석, 사내기자단과 소통 채널 운영.</li>
-        </ul></div></li>
-      <li><span class="when">2017.08 – 2018.03</span><div class="what"><b>현대자동차그룹 협력사 교육 재정립 TFT</b><span>대리</span>
-        <ul class="field">
-          <li><b>글로벌상생협력센터 건립.</b> 협력사 임직원 연수원 신축, 그룹 7개사 부품 협력사의 교육체계 수립.</li>
-        </ul></div></li>
-      <li><span class="when">2013.01 – 2017.07</span><div class="what"><b>현대자동차 구매본부 구매교육팀</b><span>사원 · 대리</span>
-        <ul class="field">
-          <li><b>인재육성 기획 및 운영.</b> 구매본부 직원과 부품 협력사 임직원 대상.</li>
-        </ul></div></li>
-    </ul>
-  </section>
-
-  <section>
     <h2>저서와 수상</h2>
     <ul class="rows">
       <li><span class="when">2026.06</span><span class="what"><b>『HR 대전환, 스킬 시프트』</b><span>8인 공저, 대표 저자 · 삼성글로벌리서치</span></span></li>
@@ -227,6 +216,98 @@ footer a { color: inherit; }
       <li><span class="when">2025.07</span><span class="what"><b>Best Research Award</b><span>삼성글로벌리서치 대표이사 표창</span></span></li>
       <li><span class="when">2024</span><span class="what"><b>우수 포스터상</b><span>한국산업및조직심리학회</span></span></li>
     </ul>
+  </section>
+</div></div>
+
+<div class="band pad" id="practice"><div class="in">
+  <div class="eyebrow">2013 – 현재 · 현대자동차그룹 · 삼성글로벌리서치</div>
+  <h2>실무 경력</h2>
+  <p class="lead">교육과 인사 분야에서 13년 넘게 일했습니다. 과제 대부분은 구성원을 이해하고 돕는 일이었고 동료들과 함께 진행했습니다. 항목 끝에 제가 맡은 역할을 적었습니다.<span>총괄은 과제 책임자, 주 수행은 분석과 설계 담당, 공동은 팀원으로 참여한 경우입니다.</span></p>
+</div></div>
+
+<div class="pad"><div class="wrap">
+  <section>
+    <h2>함께 일한 조직</h2>
+    <div class="chips"><span>현대자동차</span><span>기아</span><span>현대모비스</span><span>현대위아</span><span>전북현대모터스</span><span>삼성전자</span><span>삼성전기</span><span>삼성생명</span><span>삼성물산</span><span>삼성E&amp;A</span><span>삼성중공업</span></div>
+  </section>
+
+  <article class="co">
+    <header><span class="when">2021.11 – 현재</span><b>삼성글로벌리서치 인재경영연구실</b><span class="t">Research Fellow · People Data Scientist · 옛 삼성경제연구소</span></header>
+    <div class="grp"><h3>채용과 선발</h3><ul>
+      <li>그룹 공채 서류심사 AI 알고리즘 설계와 적용<i>주 수행</i></li>
+      <li>인성검사 문항 개발</li>
+      <li>면접 질문 추천 시스템</li>
+      <li>XR 기반 면접관 교육</li>
+    </ul></div>
+    <div class="grp"><h3>구성원 정서와 이탈 분석</h3><ul>
+      <li>핵심 인력(SW·HW 엔지니어) 이직 예측 모델과 이직 위험군 면담을 위한 부서장 제언 리포트(삼성전자 DX부문)<i>총괄</i></li>
+      <li>Pulse Survey 기반 정서 변화 분석과 만족도 예측, 넛지 추천(삼성전자 DX부문)<i>주 수행</i></li>
+      <li>익명 게시판 글로 직원 정서와 고충을 조기에 감지하는 분석(삼성전기)<i>공동</i></li>
+    </ul></div>
+    <div class="grp"><h3>조직문화와 리더십 진단</h3><ul>
+      <li>그룹 조직문화 진단 문항 개발과 텍스트 감정 분석 설계<i>공동</i></li>
+      <li>그룹 '프로다움 근무문화' 정의와 확산 방안 수립<i>공동</i></li>
+      <li>조직문화·리더십 진단 분석과 CEO·임원 대상 결과 설명회(삼성물산 패션부문)<i>공동</i></li>
+    </ul></div>
+    <div class="grp"><h3>AI 시대 인력과 직무 변화</h3><ul>
+      <li>생성형 AI에 따른 인력구조 변화 예측과 인사 대응 방안(삼성전기·삼성생명 전 직무)<i>주 수행</i></li>
+      <li>AI 시대 EPC 4개사의 인력 활용·인재 양성·변화관리 전략<i>주 수행</i></li>
+      <li>스킬 기반 전문성 관리 체계와 로컬 LLM 스킬 추출·평가 알고리즘(삼성전자 DS부문)<i>주 수행</i></li>
+      <li>AI Agent 시대의 경영 변화 전망과 HR부문 AI Agent 도입 시나리오 설계<i>주 수행</i></li>
+      <li>AGI·ASI 시대의 경영 환경 변화와 인사 대응 전략<i>총괄</i></li>
+    </ul></div>
+    <div class="grp"><h3>인재 양성과 인사제도</h3><ul>
+      <li>삼성 관계사의 AI Talent 양성체계와 교육 전략<i>총괄</i></li>
+      <li>그룹 신입·경력사원 입문교육 기획<i>총괄</i></li>
+      <li>그룹 인사제도 운영 모델의 미래 연구(평가·승격, 보상, 인재 확보·양성)<i>공동</i></li>
+    </ul></div>
+  </article>
+
+  <article class="co">
+    <header><span class="when">2018.04 – 2021.10</span><b>현대자동차그룹 인사실 인사2팀</b><span class="t">책임매니저</span></header>
+    <div class="grp"><h3>인사기획과 성과평가·보상</h3><ul>
+      <li>그룹 성과평가·보상 제도 설계</li>
+      <li>HR Transformation 진단을 바탕으로 그룹의 미래 HR 방향 도출<i>공동</i></li>
+      <li>재택·하이브리드 근무 인사기준 수립<i>공동</i></li>
+      <li>MZ세대의 요구를 반영한 복지제도 개선<i>공동</i></li>
+      <li>그룹사 인사 임원이 참여하는 그룹 HR 포럼 기획과 운영<i>공동</i></li>
+      <li>그룹 스포츠단 경쟁력 강화 방안(구단별 효율성 분석)과 전북현대모터스 인사제도 개선 지원<i>공동</i></li>
+    </ul></div>
+    <div class="grp"><h3>핵심가치와 조직문화</h3><ul>
+      <li>그룹 핵심가치·경영철학 담당</li>
+      <li>그룹 변화와 혁신 포상제도 기획과 운영</li>
+      <li>29개 그룹사 조직문화 진단 자료 분석과 시사점 도출<i>공동</i></li>
+      <li>진단 결과를 바탕으로 한 그룹 캠페인 영상과 프로모션 기획<i>공동</i></li>
+      <li>국내외 사내기자단 120명과 구성원 소통 채널 운영<i>공동</i></li>
+    </ul></div>
+    <div class="grp"><h3>People Analytics 도입</h3><ul>
+      <li>상장사 사업보고서 자료로 HR 지표를 비교하는 그룹 HR Metrics 사이트 구축<i>공동</i></li>
+      <li>그룹사와 People Analytics 합동 과제 추진(현대위아 협업 네트워크 분석, 채용 효과성 분석)<i>공동</i></li>
+      <li>그룹사 HR 실무자 대상 통계와 분석 도구 강의(R, Gephi, Jamovi)<i>공동</i></li>
+    </ul></div>
+  </article>
+
+  <article class="co">
+    <header><span class="when">2017.08 – 2018.03</span><b>현대자동차그룹 협력사 교육 재정립 TFT</b><span class="t">대리</span></header>
+    <div class="grp"><h3>글로벌상생협력센터 건립</h3><ul>
+      <li>현대자동차그룹 글로벌상생협력센터(협력사 연수원) 건립과 VR 교육장·온라인 실시간 교육장 도입<i>공동</i></li>
+      <li>그룹 7개사 부품 협력사의 교육체계 수립(품질, 생산기술, 연구개발, 경영일반, 미래변화 대응)<i>공동</i></li>
+    </ul></div>
+  </article>
+
+  <article class="co">
+    <header><span class="when">2013.01 – 2017.07</span><b>현대자동차 구매본부 구매교육팀</b><span class="t">사원 · 대리</span></header>
+    <div class="grp"><h3>인재육성 기획 및 운영</h3><ul>
+      <li>구매본부 직원과 부품 협력사 임직원 대상<i>공동</i></li>
+    </ul></div>
+  </article>
+
+  <section>
+    <h2>실무자 교육과 지식 공유</h2>
+    <div class="prose">
+      <p>HR 실무자를 위한 <a href="https://bookdown.org/yuaye_kt/RTIPS/" target="_blank" rel="noopener">R 활용서</a>와 <a href="https://bookdown.org/yuaye_kt/turnover_model/Turnover_modeling.html" target="_blank" rel="noopener">이직 예측 모델링 교재</a>를 만들어 공개했습니다. 삼성전자 DS부문과 삼성글로벌리서치에서 People Analytics를 강의했고 국내 기업 HR 임원·연구원이 참여하는 HR연구회를 운영해 왔습니다.</p>
+      <p>삼성글로벌리서치에서는 최근 5년의 HR 트렌드를 토픽모델링으로 분석하는 알고리즘과 대시보드를 만드는 과제를 총괄했습니다. 인사조직관리, HR Tech, 리더십을 주제로 강연도 하고 있습니다.</p>
+    </div>
   </section>
 
   <footer>2026년 11월 기준입니다. 더 자세한 경력은 <a href="https://www.linkedin.com/in/kwangtaekim/" target="_blank" rel="noopener">LinkedIn</a>에 있습니다.</footer>
